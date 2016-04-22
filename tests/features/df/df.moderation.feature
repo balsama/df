@@ -1,4 +1,4 @@
-@workflow
+@df @workflow
 Feature: Demo Framework: Moderation
   In order to demonstrate a content management workflow
   As a Solutions Architect
