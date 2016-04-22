@@ -8,12 +8,9 @@ projects[address][subdir] = "contrib"
 projects[address][download][type] = "git"
 projects[address][download][branch] = "8.x-1.x"
 
-projects[addtoany][version] = "1.2"
+projects[addtoany][version] = "1.3"
 projects[addtoany][type] = "module"
 projects[addtoany][subdir] = "contrib"
-; Remove silly installation message.
-; https://www.drupal.org/node/2685125
-projects[addtoany][patch][2685125] = "http://drupal.org/files/issues/addtoany-remove-hook-install-message-0.patch"
 
 projects[admin_toolbar][version] ="1.14"
 projects[admin_toolbar][type] ="module"
@@ -70,21 +67,17 @@ projects[content_browser][subdir] = "contrib"
 projects[content_browser][download][type] = "git"
 projects[content_browser][download][branch] = "8.x-1.x"
 
-projects[crop][version] = "1.x-dev"
 projects[crop][type] = "module"
 projects[crop][subdir] = "contrib"
-projects[crop][download][type] = "git"
-projects[crop][download][branch] = "8.x-1.x"
+projects[crop][version] = "1.0-alpha2"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "3.0-alpha25"
 
-projects[embed][version] = "1.x-dev"
 projects[embed][type] = "module"
 projects[embed][subdir] = "contrib"
-projects[embed][download][type] = "git"
-projects[embed][download][branch] = "8.x-1.x"
+projects[embed][version] = "1.0-rc2"
 
 projects[entity_browser][version] = "1.x-dev"
 projects[entity_browser][type] = "module"
@@ -92,11 +85,9 @@ projects[entity_browser][subdir] = "contrib"
 projects[entity_browser][download][type] = "git"
 projects[entity_browser][download][branch] = "8.x-1.x"
 
-projects[entity_embed][version] = "1.x-dev"
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][download][type] = "git"
-projects[entity_embed][download][branch] = "8.x-1.x"
+projects[entity_embed][version] = "1.0-alpha1"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
@@ -136,6 +127,9 @@ projects[geophp][type] = "module"
 projects[geophp][subdir] = "contrib"
 projects[geophp][download][type] = "git"
 projects[geophp][download][branch] = "8.x-1.x"
+; Yaml parse error in geophp.info.yml
+; https://www.drupal.org/node/2690207
+projects[geophp][patch][2690207] = "https://www.drupal.org/files/issues/geophp-yaml-parse-error-2690207-1-D8.patch"
 
 projects[geolocation][version] = "1.x-dev"
 projects[geolocation][type] = "module"
@@ -143,11 +137,11 @@ projects[geolocation][subdir] = "contrib"
 projects[geolocation][download][type] = "git"
 projects[geolocation][download][branch] = "8.x-1.x"
 
-projects[import][version] = "1.x-dev"
+projects[import][version] = "2.x-dev"
 projects[import][type] = "module"
 projects[import][subdir] = "contrib"
 projects[import][download][type] = "git"
-projects[import][download][branch] = "8.x-1.x"
+projects[import][download][branch] = "8.x-2.x"
 
 projects[inline_entity_form][version] = "1.x-dev"
 projects[inline_entity_form][type] = "module"
@@ -184,23 +178,23 @@ projects[moderate_mmenu][subdir] = "contrib"
 projects[moderate_mmenu][download][type] = "git"
 projects[moderate_mmenu][download][branch] = "8.x-1.x"
 
-projects[migrate_plus][version] = "1.x-dev"
+projects[migrate_plus][version] = "2.x-dev"
 projects[migrate_plus][type] = "module"
 projects[migrate_plus][subdir] = "contrib"
 projects[migrate_plus][download][type] = "git"
-projects[migrate_plus][download][branch] = "8.x-1.x"
+projects[migrate_plus][download][branch] = "8.x-2.x"
 
-projects[migrate_source_csv][version] = "1.x-dev"
+projects[migrate_source_csv][version] = "2.x-dev"
 projects[migrate_source_csv][type] = "module"
 projects[migrate_source_csv][subdir] = "contrib"
 projects[migrate_source_csv][download][type] = "git"
-projects[migrate_source_csv][download][branch] = "8.x-1.x"
+projects[migrate_source_csv][download][branch] = "8.x-2.x"
 
-projects[migrate_tools][version] = "1.x-dev"
+projects[migrate_tools][version] = "2.x-dev"
 projects[migrate_tools][type] = "module"
 projects[migrate_tools][subdir] = "contrib"
 projects[migrate_tools][download][type] = "git"
-projects[migrate_tools][download][branch] = "8.x-1.x"
+projects[migrate_tools][download][branch] = "8.x-2.x"
 
 projects[oauth][version] = "1.x-dev"
 projects[oauth][type] = "module"
@@ -230,11 +224,9 @@ projects[panels][patch][2700703] = "https://www.drupal.org/files/issues/panels-i
 ; https://www.drupal.org/node/2701433
 projects[panels][patch][2701433] = "https://www.drupal.org/files/issues/bandaid.patch"
 
-projects[panelizer][version] = "3.x-dev"
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
-projects[panelizer][download][type] = "git"
-projects[panelizer][download][branch] = "8.x-3.x"
+projects[panelizer][version] = "3.0-alpha2"
 ; Explicitly set the Panels IPE URL root when saving in Panelizer
 ; https://www.drupal.org/node/2700597
 projects[panelizer][patch][2700597] = "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
@@ -255,11 +247,11 @@ projects[restui][subdir] = "contrib"
 projects[restui][download][type] = "git"
 projects[restui][download][branch] = "8.x-1.x"
 
-projects[scenarios][version] = "1.x-dev"
+projects[scenarios][version] = "2.x-dev"
 projects[scenarios][type] = "module"
 projects[scenarios][subdir] = "contrib"
 projects[scenarios][download][type] = "git"
-projects[scenarios][download][branch] = "8.x-1.x"
+projects[scenarios][download][branch] = "8.x-2.x"
 
 projects[token][type] = "module"
 projects[token][subdir] = "contrib"
@@ -276,13 +268,13 @@ projects[url_embed][patch][2546204] = "https://www.drupal.org/files/issues/25462
 
 projects[workbench_moderation][type] = "module"
 projects[workbench_moderation][subdir] = "contrib"
-projects[workbench_moderation][version] = "1.0-beta2"
+projects[workbench_moderation][version] = "1.0"
 ; Provide logical access control for when IPE should be applied to moderated nodes
 ; https://www.drupal.org/node/2668006
 projects[workbench_moderation][patch][2668006] = "https://www.drupal.org/files/issues/2668006-2.patch"
 ; Replace the workbench moderation form with a block
 ; https://www.drupal.org/node/2685163
-projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-8.patch"
+projects[workbench_moderation][patch][2685163] = "https://www.drupal.org/files/issues/2685163-19.patch"
 
 ; Libraries
 libraries[dropzone][destination] = "../../libraries"
@@ -314,7 +306,7 @@ libraries[lite][download][type] = "get"
 libraries[lite][directory_name] = "lite"
 libraries[lite][download][url] = "https://github.com/DevinCarlson/ckeditor-track-changes/archive/5a4461f9bcc9e2dae41f06a9e92fdc2c2d18f179.zip"
 
-libraries[slick][destination] = "libraries"
+libraries[slick][destination] = "../../libraries"
 libraries[slick][download][type] = "get"
 libraries[slick][download][url] = "https://github.com/kenwheeler/slick/archive/1.5.0.zip"
 
@@ -324,7 +316,7 @@ projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
 projects[adminimal_theme][download][type] = "git"
 projects[adminimal_theme][download][branch] = "8.x-1.x"
-projects[adminimal_theme][patch][2680689] = "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-2.patch"
+projects[adminimal_theme][patch][2680689] = "https://www.drupal.org/files/issues/adminimal_theme-fix-styles-for-admin-toolbar-2680689-7.patch"
 
 projects[zurb-foundation][version] = "6.x-dev"
 projects[zurb-foundation][type] = "theme"
