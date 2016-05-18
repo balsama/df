@@ -22,3 +22,7 @@ projects[drupal][patch][2635712] = "http://drupal.org/files/issues/2635712-14.pa
 ; Can we test RefreshLess with simplytest.me?
 ; https://www.drupal.org/node/2695717
 projects[drupal][patch][2695717] = "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch"
+
+; Make inherited install profiles load base profile modules/themes in correct order
+; https://www.drupal.org/node/1356276
+;projects[drupal][patch][1356276] = "https://www.drupal.org/files/issues/make_inherited_install-1356276-133.patch"
