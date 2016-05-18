@@ -53,13 +53,14 @@ function df_build_distribution() {
     # Build Codebase
     mkdir -p drupal/profiles
     mv df drupal/profiles/df
-    git clone --branch 8.x-1.x git@github.com:acquia/lightning.git profiles/lightning
+    git clone --branch 8.x-1.x https://github.com/acquia/lightning.git drupal/profiles/lightning
 
     # Build the current branch.
     df_header Building Demo Framework from current branch
     cd drupal
     drush make --yes profiles/df/drupal-org-core.make --prepare-install
     drush make --yes profiles/df/drupal-org.make --no-core --contrib-destination=profiles/df
+    drush make --yes profiles/lightning/drupal-org.make --no-core --contrib-destination=profiles/lightning
     drush dl diff
     mkdir -p sites/default/private/files
     mkdir -p sites/default/private/temp
