@@ -106,38 +106,35 @@
         "loopindex/ckeditor-track-changes": "dev-master#a7df5c6b685385713e8aaf2df3f44c82e3bf823a",
         "kenwheeler/slick": "1.5.0"
     }, 
+    "scripts": {
+        "post-install-cmd": [
+            "mkdir profiles/df/libraries && cd profiles/df/libraries && ln -s ../../../vendor/loopindex/ckeditor-track-changes lite"
+        ]
+    },
     "extra": {
         "installer-paths": {
             "core": ["type:drupal-core"],
             "profiles/df/modules/contrib/{$name}": ["type:drupal-module"],
-            "profiles/df/themes/contrib/{$name}": ["type:drupal-theme"],
-            "profiles/df/libraries/lite": ["loopindex/ckeditor-track-changes"],
-            "profiles/df/libraries/{$name}": [
-                "enyo/dropzone",
-                "mjolnic/fontawesome-iconpicker",
-                "desandro/masonry",
-                "desandro/imagesloaded",
-                "kenwheeler/slick"
-            ]
+            "profiles/df/themes/contrib/{$name}": ["type:drupal-theme"]
         },
         "patches": {
             "drupal/drupal": {
                 "Add authentication support for Views | https://www.drupal.org/node/2228141":
-                "http://drupal.org/files/issues/add_authentication-2228141-54.patch",
+                "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch",
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
                 "https://www.drupal.org/files/issues/node-migration-traits-database-exception.patch",
                 "Quickedit cant edit images | https://www.drupal.org/node/2635712":
-                "http://drupal.org/files/issues/2635712-14.patch",
+                "https://www.drupal.org/files/issues/2635712-14.patch",
                 "Can we test RefreshLess with simplytest.me? | https://www.drupal.org/node/2695717":
                 "https://www.drupal.org/files/issues/refreshless-alpha3-core-patch-2695717-7.patch"
             },
             "drupal/better_formats": {
                 "Fix field validation. | http://drupal.org/node/2709313":
-                "http://drupal.org/files/issues/bef_field_is_not-2709313-2.patch"
+                "https://www.drupal.org/files/issues/bef_field_is_not-2709313-2.patch"
             },
             "drupal/block_class": {
                 "Add support for page manager. | http://drupal.org/node/2509142":
-                "http://drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
+                "https://www.drupal.org/files/issues/add-page-manager-support-2509142-2.patch"
             },
             "drupal/lite": {
                 "Lite uses the wrong path | https://www.drupal.org/node/2718189":
@@ -175,7 +172,7 @@
             },
             "loopindex/ckeditor-track-changes": {
                 "CKLite interferes with content insertion | http://drupal.org/node/2482879":
-                "http://drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
+                "https://www.drupal.org/files/issues/cklite-content-insertion-2482879-4.patch"
             }
         }
     }
