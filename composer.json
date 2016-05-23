@@ -46,15 +46,16 @@
     ],
     "require": {
         "composer/installers": "^1.0.20",
+        "drupal-composer/drupal-scaffold": "^1.2",
         "cweagans/composer-patches": "~1.0",
-        "drupal/core": "8.2.*-dev",
+        "drupal/lightning": "8.1.*",
+        "drupal/core": "8.1.*",
         "drupal/address": "8.1.x-dev",
         "drupal/addtoany": "8.1.3",
         "drupal/admin_toolbar": "8.1.x-dev",
         "drupal/better_formats": "8.1.x-dev",
         "drupal/block_class": "8.1.x-dev",
         "drupal/dropzonejs": "8.1.0-alpha1",
-        "drupal/composer_manager": "8.1.x-dev",
         "drupal/config_devel": "8.1.x-dev",
         "drupal/config_update": "8.1.1",
         "drupal/config_sync": "8.1.x-dev",
@@ -108,6 +109,7 @@
     }, 
     "scripts": {
         "post-install-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
             "mkdir profiles/df/libraries && cd profiles/df/libraries && ln -s ../../../vendor/loopindex/ckeditor-track-changes lite"
         ]
     },
@@ -119,6 +121,8 @@
         },
         "patches": {
             "drupal/drupal": {
+                "Make inherited install profiles load base profile... | https://www.drupal.org/node/1356276":
+                "https://www.drupal.org/files/issues/make_inherited_install-1356276-133.patch",
                 "Add authentication support for Views | https://www.drupal.org/node/2228141":
                 "https://www.drupal.org/files/issues/add_authentication-2228141-54.patch",
                 "ConnectionNotDefinedException thrown... | https://www.drupal.org/node/2703669":
