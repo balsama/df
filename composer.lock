@@ -1571,12 +1571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/df.git",
-                "reference": "00b8021c5417724fd14b49c41d41b9e49875e53b"
+                "reference": "ab5ba67568b883b421138a8e4fcd51e53efdcc4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/df/zipball/00b8021c5417724fd14b49c41d41b9e49875e53b",
-                "reference": "00b8021c5417724fd14b49c41d41b9e49875e53b",
+                "url": "https://api.github.com/repos/acquia/df/zipball/ab5ba67568b883b421138a8e4fcd51e53efdcc4c",
+                "reference": "ab5ba67568b883b421138a8e4fcd51e53efdcc4c",
                 "shasum": ""
             },
             "require": {
@@ -1598,6 +1598,7 @@
                 "drupal/core": "8.1.1",
                 "drupal/crop": "8.1.0-alpha2",
                 "drupal/ctools": "8.3.0-alpha25",
+                "drupal/diff": "8.1.0-alpha2",
                 "drupal/dropzonejs": "8.1.0-alpha1",
                 "drupal/embed": "8.1.0-rc2",
                 "drupal/entity_browser": "8.1.x-dev",
@@ -1716,7 +1717,39 @@
                 "source": "https://github.com/acquia/df/tree/8.x-lightning",
                 "issues": "https://github.com/acquia/df/issues"
             },
-            "time": "2016-05-23 20:59:30"
+            "time": "2016-05-23 21:23:57"
+        },
+        {
+            "name": "drupal/diff",
+            "version": "8.1.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/diff",
+                "reference": "2216ce763fecb03d441231e1b2b3fdddeb761b53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/diff-8.x-1.x-alpha2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/entity": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Shows differences between content revisions.",
+            "homepage": "https://www.drupal.org/project/diff",
+            "time": "2016-03-07 18:06:34"
         },
         {
             "name": "drupal/dropzonejs",
@@ -1788,6 +1821,38 @@
             "description": "Provides a framework for different types of embeds in text editors.",
             "homepage": "https://www.drupal.org/project/embed",
             "time": "2016-04-14 01:03:52"
+        },
+        {
+            "name": "drupal/entity",
+            "version": "8.1.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity",
+                "reference": "70a105ae063c54bf59e67f9e41cb9121374acb7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-alpha3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "~8.1",
+                "drupal/system": ">=8.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
+            "homepage": "http://drupal.org/project/entity",
+            "time": "2016-04-27 08:54:12"
         },
         {
             "name": "drupal/entity_browser",
@@ -2786,6 +2851,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947": "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2829,8 +2897,7 @@
                     "dev-8.x-3.x": "8.3.x-dev"
                 },
                 "patches_applied": {
-                    "Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
-                    "Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
+                    "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -3074,7 +3141,7 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "2674874 - Issue saving Schedule Update Type form": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
+                    "Issue saving Schedule Update Type form | https://www.drupal.org/node/2674874": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -3244,7 +3311,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch"
+                    "Provide logical access control for when IPE... | https://www.drupal.org/node/2668006": "https://www.drupal.org/files/issues/2668006-2.patch",
+                    "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163": "https://www.drupal.org/files/issues/2685163-19.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
