@@ -47,7 +47,7 @@
     "require": {
         "composer/installers": "^1.0.20",
         "drupal-composer/drupal-scaffold": "^1.2",
-        "cweagans/composer-patches": "~1.0",
+        "cweagans/composer-patches": "dev-master",
         "drupal/lightning": "8.1.*",
         "drupal/core": "8.1.*",
         "drupal/address": "8.1.x-dev",
