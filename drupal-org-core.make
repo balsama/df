@@ -5,7 +5,7 @@ core = 8.x
 projects[drupal][type] = "core"
 projects[drupal][version] = "8.2.x-dev"
 projects[drupal][download][type] = "git"
-projects[drupal][download][branch] = "8.2.x"
+projects[drupal][download][branch] = "8.1.x"
 
 ; Add authentication support for Views
 ; https://www.drupal.org/node/2228141
@@ -25,4 +25,4 @@ projects[drupal][patch][2695717] = "https://www.drupal.org/files/issues/refreshl
 
 ; Make inherited install profiles load base profile modules/themes in correct order
 ; https://www.drupal.org/node/1356276
-;projects[drupal][patch][1356276] = "https://www.drupal.org/files/issues/make_inherited_install-1356276-133.patch"
+projects[drupal][patch][1356276] = "https://www.drupal.org/files/issues/make_inherited_install-1356276-133.patch"
