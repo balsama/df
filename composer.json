@@ -93,6 +93,7 @@
         "drupal/refreshless": "8.1.0-alpha3",
         "drupal/restui": "8.1.x-dev",
         "drupal/scenarios": "8.2.x-dev",
+        "drupal/scheduled_updates": "8.1.0-alpha5",
         "drupal/scheduler": "8.1.0-alpha1",
         "drupal/token": "8.1.0-alpha2",
         "drupal/url_embed": "8.1.x-dev",
@@ -157,8 +158,12 @@
                 "https://www.drupal.org/files/issues/panels-ipe-esc-focus-fixes-2636490-9.patch"
             },
             "drupal/panelizer": {
-                "Enter drupal/panelizer patch #2700597 description here":
+                "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597":
                 "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
+            },
+            "drupal/scheduled_updates": {
+                "Issue saving Schedule Update Type form | https://www.drupal.org/node/2674874":
+                "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
             },
             "drupal/url_embed": {
                 "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597":
