@@ -62,6 +62,7 @@
         "drupal/content_browser": "8.1.x-dev",
         "drupal/crop": "8.1.0-alpha2",
         "drupal/ctools": "8.3.0-alpha25",
+        "drupal/diff": "8.1.0-alpha2",
         "drupal/embed": "8.1.0-rc2",
         "drupal/entity_browser": "8.1.x-dev",
         "drupal/entity_embed": "8.1.0-alpha1",

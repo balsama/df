@@ -76,6 +76,10 @@ projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "3.0-alpha26"
 
+projects[diff][type] = "module"
+projects[diff][subdir] = "contrib"
+projects[diff][version] = "1.0-alpha2"
+
 projects[embed][type] = "module"
 projects[embed][subdir] = "contrib"
 projects[embed][version] = "1.0-rc2"
