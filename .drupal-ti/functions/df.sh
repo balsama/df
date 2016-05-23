@@ -62,9 +62,10 @@ function df_build_distribution() {
     drush make --yes profiles/df/drupal-org.make --no-core --contrib-destination=profiles/df
     drush make --yes profiles/lightning/drupal-org.make --no-core --contrib-destination=profiles/lightning
 
-    df_header Add diff module and prepare files directories
+    df_header Prepare files directories
     mkdir -p sites/default/private/files
     mkdir -p sites/default/private/temp
+    ls -la
 
     # Install third-party libraries.
     df_header Installing third-party libraries
